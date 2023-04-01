@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+     <div class="navbar">
+      <div class="navbar-content m-auto">
+        <h3 class="py-4 links">Now playing</h3>
+        <h3 class="py-4 links">Popular</h3>
+        <h3 class="py-4 links">Top rated</h3>
+        <h3 class="py-4 links">Trending</h3>
+        <h3 class="py-4 links">Upcoming</h3>
+        <a class="h3 py-4 links" href="#contact-us">Contact us</a>
+        
+      </div>
+      <div
+        class="navbar-icons d-flex flex-column align-items-center justify-content-between"
+      >
+        <img class="" src="images/logo.png" alt="" />
+        <div class="toggle">
+          <i class="open  fa-solid fa-bars fa-2x"></i>
+          <i class="close fa-solid fa-x fa-2x"></i>
+        </div>
+        <div class="end">
+          <i class="fa-solid fa-globe"></i>
+          <i class="fa-solid fa-share-nodes d-flex flex-column"></i>
+        </div>
+      </div>
+    </div> 
+    <input id="searchfeild"class="form-control w-25 m-auto bg-dark m-5 text-white m-5" type="text" placeholder="search for a movie">
+    <div class="container-fluid">
+
+      <div class="row" id="myrow"></div>
+    </div>
+    <!--      -->
+    <div id="contact-us">
+      <div class="container p-5">
+        <div class="row ">
+          <div class="col">
+            
+          <input class="form-control m-2 bg-dark text-white " type="text" placeholder="enter your name">
+    
+           <!-- // -->
+          <input id="phoneelement" class="form-control m-2 bg-dark  text-white " type="tel" placeholder="enter your phone number">
+          <p id="phoneerror" class=" m-2 text-danger d-none"> invalid phone number</p>
+          <!-- // -->
+          <input id="passwordelement" class="form-control m-2 bg-dark  text-white " type="password" placeholder="enter your password">
+          <p id="passworderror" class=" m-2 text-danger d-none"> invalid  password format: Password must be between 4 and 8 digits long and include at least one numeric digit.</p>
+          </div>
+          <div class="col">
+            
+            <input id="emailelement" class="form-control m-2 col-6" type="email" placeholder="enter your email">
+            <p id="emailerror" class=" m-2 text-danger d-none"> invalid email format</p>
+
+            <input id="ageelement" class="form-control m-2 bg-dark text-white" type="text" placeholder="enter your age">
+            <p id="ageerror" class=" m-2 text-danger d-none"> invalid age</p>
+
+
+            <input id="passwordelement2" class="form-control m-2 bg-dark text-white" type="password" placeholder="reenter your password">
+            <p id="passworderror2" class=" m-2 text-danger d-none">  invalid  password format: Password must be between 4 and 8 digits long and include at least one numeric digit.</p>
+            </div>
+        
+        </div>
+        <button class="m-2 btn btn-info ">Submit</button>
+      </div>
+    </div>
+    <script src="jquery-3.6.3.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

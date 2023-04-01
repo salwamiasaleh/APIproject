@@ -1,0 +1,56 @@
+*{
+   box-sizing: border-box;
+
+}
+body{
+   background-color: black;
+}
+.item{
+   position: relative;
+   overflow: hidden;
+}
+.layer{
+   background-color: rgba(9, 8, 8, 0.5);
+   /* height:100%; */
+   z-index: 8988;
+   position: absolute;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   top:150%;
+   transition: top 2s;
+}
+.item:hover .layer{
+top: 0px;
+}
+.navbar{
+   position: fixed;
+   z-index: 8989;
+   width:25%;
+   height:765px;
+   background-color: black;
+   color:white;
+}
+.navbar-content{
+   width: 80%;
+   height: 100%;
+}
+.navbar-icons{
+width:20%;
+height:100%;
+background-color:white;
+}
+.toggle{
+   cursor:pointer;
+}
+.navbar-icons i{
+   color:black;
+}
+.navbar-content h3{
+   cursor: pointer;
+   
+}
+a{
+   text-decoration: none;
+   color:white;
+}
